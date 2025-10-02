@@ -33,8 +33,11 @@ const App = () => {
       </div>
 
       <h2>Statistics</h2>
-      
-      <Statistics good={good} neutral={neutral} bad={bad} />
+
+      { (good + neutral + bad !== 0) 
+        ? <Statistics good={good} neutral={neutral} bad={bad} />
+        : <p>No feedback given</p>
+      }
     </div>
   )
 }
