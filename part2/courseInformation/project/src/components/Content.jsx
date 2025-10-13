@@ -11,7 +11,7 @@ const Content = ({parts}) => {
                 )}
             </ul>
             
-            <p>total of {parts.reduce((acum, part) => acum + part.exercises, 0)} exercises</p>
+            <p><b>total of {parts.reduce((acum, part) => acum + part.exercises, 0)} exercises</b></p>
         </>
     );
 }

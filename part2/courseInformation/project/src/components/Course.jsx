@@ -4,8 +4,12 @@ import Header from "./Header";
 const Course = ({course}) => {
     return (
         <>
-            <Header name={course.name} />
-            <Content parts={course.parts} />
+            {course.map(c => (
+                <div key={c.id}>
+                    <Header name={c.name} />
+                    <Content parts={c.parts} />
+                </div>
+            ))}
         </>
     );
 }
