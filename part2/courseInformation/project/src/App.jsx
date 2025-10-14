@@ -46,8 +46,7 @@ const App = () => {
     }
   ]
 
-
-  return <Course course={course} />
+  return <Course id={course.id} course={course} />
 }
 
 export default App
